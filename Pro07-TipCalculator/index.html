@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+
+        <h1 class="app-title">Tip Calculator</h1>
+
+        <!-- Input Section -->
+        <div class="input-section">
+
+            <div class="input-group">
+                <label for="bill-amount">Total Bill Amount (₹)</label>
+                <input
+                    type="number"
+                    id="bill-amount"
+                    class="input-field"
+                    placeholder="Enter bill amount"
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="tip-percentage">Tip Percentage (%)</label>
+                <input
+                    type="number"
+                    id="tip-percentage"
+                    class="input-field"
+                    placeholder="Enter tip percentage"
+                >
+            </div>
+
+            <label for="total-persons">Number of Persons</label>
+            <div class="input-group">
+                <input
+                    type="number"
+                    id="total-persons"
+                    class="input-field"
+                    placeholder="Enter number of persons"
+                >
+            </div>
+
+            <button id="calculate-btn" class="calculate-btn">
+                Calculate
+            </button>
+
+        </div>
+
+        <!-- Result Section -->
+        <div class="result-section">
+
+            <div class="result-card">
+                <h3>Total Tip</h3>
+                <p id="total-tip">₹0.00</p>
+            </div>
+
+            <div class="result-card">
+                <h3>Total Amount</h3>
+                <p id="total-amount">₹0.00</p>
+            </div>
+
+            <div class="result-card">
+                <h3>Per Person Amount</h3>
+                <p id="per-person-amount">₹0.00</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
